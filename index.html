@@ -13,7 +13,7 @@
             reverse_picture_color = true; /* (布尔值)是否将图片反色 */
 
             /* (字符串)在这里写一些介绍和生前逸事 */
-            introduction = "朱杰 是目前<i>初三一班</i>的学生，成绩倒数，教室里有专属座位，不定期请假。<br>生前逸事：QQ空间上传弱智图片；装病逃课；考试取得倒数前几的好成绩（倒数前几不是前几？）；打架斗殴；玩一款由腾讯自主研发的moba游戏；上传弱智表情包等。如果想要了解更多，请关注以下 Tags：<i>#朱杰发烧无法英语考试# #朱杰的承诺书# #朱杰发送超萌表情包试图更改人设# 。"; 
+            introduction = "朱杰 是目前<i>初三一班</i>的学生，成绩倒数，教室里有专属座位，不定期请假。<br>生前逸事：QQ空间上传弱智图片；装病逃课；考试取得倒数前几的好成绩（倒数前几不是前几？）；打架斗殴；玩一款由腾讯自主研发的moba游戏；上传弱智表情包等。如果想要了解更多，请关注以下 Tags：<i>#朱杰发烧无法英语考试# #朱杰的承诺书# #朱杰发送超萌表情包试图更改人设# #朱杰谈恋爱# 等。"; 
 
             
         </script>
@@ -33,6 +33,24 @@
             }
             .container {
                 max-width: 720px;
+            }
+            #tanlianai {
+                border-style:solid;
+                border-width:2px;
+                border-radius: 7px;
+                border-color: white;
+                background-color: black;
+                padding: .2em;
+                font-size: 20px;
+            }
+            #qingjia {
+                border-style:solid;
+                border-width:2px;
+                border-radius: 7px;
+                border-color: white;
+                background-color: black;
+                padding: .2em;
+                font-size: 20px;
             }
             #RenShengZiGu {
                 border-style:solid;
@@ -56,8 +74,20 @@
                 margin-left: .3em;
                 color: white;
             }
+            #Sheiwusi2 {
+                margin-left: .3em;
+                color: white;
+            }
             #yesu {
                 width: 5vw;
+                border-radius: 5px;
+            }
+            #tanlianai {
+                width: 16vw;
+                border-radius: 5px;
+            }
+            #qingjia {
+                width: 10vw;
                 border-radius: 5px;
             }
             #Lilium_formosanum_var_pricei {
@@ -102,6 +132,9 @@
                 transform: translateX(-50%);
             }
             #tips {
+                color: gray;
+            }
+            #version {
                 color: gray;
             }
             #tips::after {
@@ -257,7 +290,7 @@
                             <tr>
                                 <td><img alt="yesu.jpg" src="yesu.jpg" id="yesu">
                                 </td>
-                                <td><div id="Sheiwusi">事件启用: <span style="margin:.0em .22em .0em .2em; padding: .0em .2em .0em .2em; border-radius: 5px; border: thin solid; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><b id="shengdixunli"></b></span>-该人员可能已复活并亲自光临本条目。请注意您的人身安全。</div>
+                                <td><div id="Sheiwusi2">事件启用: <span style="margin:.0em .2em .0em .2em; padding: .0em .2em .0em .2em; border-radius: 5px; border: thin solid; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""><b id="shengdixunli"></b></span>-该人员可能已复活并亲自光临本条目。请注意您的人身安全。</div>
                                 </td>
                             </tr>
                         </tbody>
@@ -271,18 +304,32 @@
                 <img alt="灵堂相框" src="./电子灵堂.png" id="Picture_Border">
                 <div style="position: absolute;"><div id="Champagne"></div></div>
                 <h3 id="big_name">未启用 JavaScript。</h3>
+                <h3>小丑简介</h3>
                 <p id="life_introduction">未启用 JavaScript。</p>
                 <hr />
-                <h4 id="Gongpin">给 [] 送上贡品</h4>
+                <h3 id="Gongpin">给 [] 送上贡品</h3>
                 <div class="btn-group" role="group" aria-label="...">
                     <button type="button" class="btn btn-default" id="UpStream">上升气流</button>
                     <button type="button" class="btn btn-default" id="HideCloth">隐藏遮羞布</button>
                     <button type="button" class="btn btn-default" id="BiggerMamma">胸部变大（宽度窄的屏幕可能不生效）</button>
-                    <button type="button" class="btn btn-default" id="OpenChampagne">开香槟🍾（开多了会卡，不要作死）</button>
+                    <button type="button" class="btn btn-default" id="OpenChampagne">开香槟🍾（手机版看不到的往右划）</button>
                 </div>
                 <hr />
-                <h4>留下致辞</h4>
+                <h3>我们不会忘记你的付出和贡献的！</h3>
+                <h4>① 两个🤡<h4>
+                <img alt="img/tanlianai.png" src="img/tanlianai.png" id="tanlianai">
+                <h4>② 我要提起一场考试<h4>
+                <img alt="img/qingjia.png" src="img/qingjia.png" id="qingjia">
+                <hr />
+                <h3>留下致辞</h3>
+                <h4>Tips:留言需要登录Github账号，如果加载不出来请挂梯子或者稍后再试！</h4>
                 <div id="gitalk-container"></div>
+                <hr />
+                <br>
+                <br>
+                <br>
+                <h5 align="center">Copyright © 2023 Aerolite Team, All rights reserved.</h5>
+                <h5 id="version" align="center">v1.2.0 (20231022)</h5>
             </div>
         </div>
 
