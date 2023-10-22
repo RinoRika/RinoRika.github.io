@@ -213,6 +213,14 @@
                 100%{width: 18%;}
             }
             .Bigger {animation: 2s Bigger;}
+            @keyframes Scare {
+                0%{width: 18%;}
+                25%{width: 500%; transform: rotate(180deg);}
+                50%{width: 1000%;}
+                75%{width: 500%; transform: rotate(-180deg);}
+                100%{width: 18%;}
+            }
+            .Scare {animation: 4s Scare;}
             #Champagne{
                 width: 10em;
                 left: 50%;            
@@ -327,8 +335,10 @@
                 <div class="btn-group" role="group" aria-label="...">
                     <button type="button" class="btn btn-default" id="UpStream">上升气流</button>
                     <button type="button" class="btn btn-default" id="HideCloth">隐藏遮羞布</button>
-                    <button type="button" class="btn btn-default" id="BiggerMamma">胸部变大（宽度窄的屏幕可能不生效）</button>
+                    <button type="button" class="btn btn-default" id="BiggerMamma">胸部变大（窄的屏幕效果不好）</button>
                     <button type="button" class="btn btn-default" id="OpenChampagne">开香槟🍾（手机版看不到的往右划）</button>
+                    <button type="button" class="btn btn-default" id="Scare">午夜惊魂</button>
+                    <button type="button" class="btn btn-default" id="Burn">烧毁遗照（刷新重置）</button>
                 </div>
                 <hr />
                 <h3>我们不会忘记你的付出和贡献的！</h3>
@@ -347,7 +357,7 @@
                 <br>
                 <br>
                 <h5 align="center">Copyright © 2023 Aerolite Team, All rights reserved.</h5>
-                <h5 id="version" align="center">v1.3.2 (20231022)</h5>
+                <h5 id="version" align="center">v1.4.0 (20231022) <a href="update.html">更新日志</a></h5>
             </div>
         </div>
 
@@ -407,6 +417,14 @@
             document.getElementById("BiggerMamma").onclick = function(){
                 $('#Dead_Picture').addClass("Bigger");
                 setTimeout(function(){$('#Dead_Picture').removeClass('Bigger')},2000);
+            };
+            document.getElementById("Scare").onclick = function(){
+                $('#Dead_Picture').addClass("Scare");
+                setTimeout(function(){$('#Dead_Picture').removeClass('Scare')},4000);
+            };
+            document.getElementById("Burn").onclick = function(){
+                document.getElementById("Dead_Picture").src = 'head.png';
+                $('#Dead_Picture').removeClass();
             };
             document.getElementById("OpenChampagne").onclick = function(){
                 lottie.loadAnimation({
